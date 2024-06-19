@@ -10,7 +10,7 @@ namespace CRUDWebAPI.Controllers
 {
     public class StudentsController : ApiController
     {
-        CollegeEntities OE = new CollegeEntities();
+        AzureCollegeDBEntities OE = new AzureCollegeDBEntities();
         // ..api/Students/
         public IQueryable<Student> Get()
         {

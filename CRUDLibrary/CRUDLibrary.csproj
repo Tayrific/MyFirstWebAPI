@@ -50,53 +50,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzureStudentEDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureStudentEDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzureStudentEDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureStudentEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzureStudentEDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureStudentEDM.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="student.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>student.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs">
-      <DependentUpon>StudentEDM.tt</DependentUpon>
+      <DependentUpon>AzureStudentEDM.tt</DependentUpon>
     </Compile>
-    <Compile Include="StudentEDM.Context.cs">
+    <Compile Include="student.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StudentEDM.Context.tt</DependentUpon>
+      <DependentUpon>student.edmx</DependentUpon>
     </Compile>
-    <Compile Include="StudentEDM.cs">
+    <Compile Include="student1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StudentEDM.tt</DependentUpon>
+      <DependentUpon>student.tt</DependentUpon>
     </Compile>
-    <Compile Include="StudentEDM.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StudentEDM.edmx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="StudentEDM.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>StudentEDM.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <EntityDeploy Include="AzureStudentEDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AzureStudentEDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AzureStudentEDM.edmx.diagram">
+      <DependentUpon>AzureStudentEDM.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
-    <None Include="StudentEDM.edmx.diagram">
-      <DependentUpon>StudentEDM.edmx</DependentUpon>
+    <EntityDeploy Include="student.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>student.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="student.edmx.diagram">
+      <DependentUpon>student.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="StudentEDM.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>StudentEDM.Context.cs</LastGenOutput>
-      <DependentUpon>StudentEDM.edmx</DependentUpon>
-    </Content>
-    <Content Include="StudentEDM.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StudentEDM.edmx</DependentUpon>
-      <LastGenOutput>StudentEDM.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="AzureStudentEDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzureStudentEDM.edmx</DependentUpon>
+      <LastGenOutput>AzureStudentEDM.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AzureStudentEDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzureStudentEDM.edmx</DependentUpon>
+      <LastGenOutput>AzureStudentEDM.cs</LastGenOutput>
+    </Content>
+    <Content Include="student.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>student.edmx</DependentUpon>
+      <LastGenOutput>student.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="student.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>student.edmx</DependentUpon>
+      <LastGenOutput>student1.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,10 +13,10 @@ namespace CRUDLibrary
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CollegeEntities : DbContext
+    public partial class AzureCollegeDBEntities : DbContext
     {
-        public CollegeEntities()
-            : base("name=CollegeEntities")
+        public AzureCollegeDBEntities()
+            : base("name=AzureCollegeDBEntities")
         {
         }
     

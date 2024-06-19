@@ -33,7 +33,7 @@
           <Property Name="Age" Type="Int32" />
           <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="CollegeEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Collegeentities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Students" EntityType="Self.Student" />
         </EntityContainer>
       </Schema>
@@ -41,7 +41,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CollegeModelStoreContainer" CdmEntityContainer="CollegeEntities">
+        <EntityContainerMapping StorageEntityContainer="CollegeModelStoreContainer" CdmEntityContainer="Collegeentities">
           <EntitySetMapping Name="Students">
             <EntityTypeMapping TypeName="CollegeModel.Student">
               <MappingFragment StoreEntitySet="Students">

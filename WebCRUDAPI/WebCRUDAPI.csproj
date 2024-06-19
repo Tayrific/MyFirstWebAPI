@@ -100,6 +100,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CRUDwebAPIApp - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\CRUDwebAPIApp - Web Deploy1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,6 +118,9 @@
       <Project>{9e96847c-0479-4867-97bc-da431eb731c3}</Project>
       <Name>CRUDLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
